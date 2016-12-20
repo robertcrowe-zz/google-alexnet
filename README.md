@@ -37,7 +37,8 @@ Training with 100 epochs required 6,345 seconds (~105 minutes).  Working in Pyth
 I used the TFlearn library on top of Tensorflow to simplify the coding effort, and 
 found it to be well-suited to this project, along with Numpy and Scikit-Learn.
 
-The original AlexNet was designed for input images of 227x227x3, but the SVHN dataset 
+The [original AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) 
+was designed for input images of 227x227x3, but the SVHN dataset 
 is 32x32x3, so a significant task was to reshape AlexNet for a smaller input size 
 while trying to preserve the original AlexNet design, with similar changes in the 
 visual fields between layers.  This involved changing the filter sizes and strides, 
@@ -52,6 +53,11 @@ should be significantly lower for SVHN, so I also made adjustments to the number
 of filters (aka “kernels”, “kernel maps”, or “feature maps”).  This resulted in a 
 significant decrease in resource requirements, with a small if any decrease in 
 accuracy.
+
+### References:
+Krizhevsky, Sutskever, Hinton _"ImageNet Classification with Deep Convolutional Neural Networks"_, 2012
+
+https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf
 
 ### Prerequisites:
 	Tensorflow: https://www.tensorflow.org/
