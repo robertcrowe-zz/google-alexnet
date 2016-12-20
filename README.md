@@ -53,17 +53,17 @@ of filters (aka “kernels”, “kernel maps”, or “feature maps”).  This 
 significant decrease in resource requirements, with a small if any decrease in 
 accuracy.
 
-## Prerequisites:
+### Prerequisites:
 	Tensorflow: https://www.tensorflow.org/
 	TFlearn: http://tflearn.org/
 	Scikit-Learn: http://scikit-learn.org/
 	NumPy: http://www.numpy.org/
 	Pandas: http://pandas.pydata.org/
 
-## Dataset:
+### Dataset:
 	http://ufldl.stanford.edu/housenumbers/
 
-## Code:
+### Code:
 	cnn.py - main code
 	pics.py - for generating misclassified example images
 	confusion.py - for generating the confusion matrices
